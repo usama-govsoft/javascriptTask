@@ -29,7 +29,7 @@ function Filter(props) {
           <input
             type="text"
             pattern="[0-9]*"
-            onInput={(event) => {
+            onChange={(event) => {
                 if (isNaN(Number(event.target.value))) {
                     return setImageValue('');
                 } else {
